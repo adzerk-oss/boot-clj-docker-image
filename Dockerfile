@@ -29,5 +29,8 @@ RUN curl -s https://api.github.com/repos/boot-clj/boot/releases \
 ENV BOOT_AS_ROOT yes
 ENV BOOT_JVM_OPTIONS -Xmx2g
 
-# download & install deps
-RUN /usr/bin/boot
+# download & install deps, cache REPL and web deps
+RUN /usr/bin/boot web -s doesnt/exist repl -e '(System/exit 0)'
+RUN rm -rf target
+
+ENTRYPOINT ["/usr/bin/boot"]
