@@ -24,6 +24,7 @@ ENV JAVA_HOME /opt/java
 RUN wget -O /usr/bin/boot https://github.com/boot-clj/boot/releases/download/2.0.0/boot.sh \
     && chmod +x /usr/bin/boot
 
+ENV BOOT_VERSION 2.1.0
 ENV BOOT_AS_ROOT yes
 ENV BOOT_JVM_OPTIONS -Xmx2g
 
