@@ -2,6 +2,6 @@
 
 This repo is set up as an [automated build](https://docs.docker.com/docker-hub/builds) on Docker Hub. The `adzerk/boot-clj` Docker image is automatically built from the Dockerfile in this repo and deployed to Docker Hub.
 
-To use as a base image for another Dockerfile, put this at the top of the Dockerfile:
+To use as a base image for another Dockerfile, put this at the top of the Dockerfile: 
 
     FROM adzerk/boot-clj
