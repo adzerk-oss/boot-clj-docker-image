@@ -16,7 +16,7 @@ RUN apt-get update \
     && rm /tmp/jdk8.tar.gz \
     && update-alternatives --install /usr/bin/java java /opt/java/bin/java 100 \
     && update-alternatives --install /usr/bin/javac javac /opt/java/bin/javac 100 \
-    && wget -O /usr/bin/boot https://github.com/boot-clj/boot-bin/releases/download/2.4.2/boot.sh \
+    && wget -O /usr/bin/boot https://github.com/boot-clj/boot-bin/releases/download/latest/boot.sh \
     && chmod +x /usr/bin/boot
 
 ENV JAVA_HOME /opt/java
