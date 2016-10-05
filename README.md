@@ -1,5 +1,7 @@
 # boot-clj-docker-image
 
+[![](https://images.microbadger.com/badges/image/adzerk/boot-clj.svg)](https://microbadger.com/images/adzerk/boot-clj "Get your own image badge on microbadger.com")
+
 `adzerk/boot-clj` is a public Docker image that installs and sets up Oracle
 Java 8 and the latest version of [Boot][boot].
 
@@ -16,7 +18,7 @@ $ docker run -it adzerk/boot-clj repl
 ## Extend It
 
 To use as a base image for another _Dockerfile_, put this at the top of your
-_Dockerfile_: 
+_Dockerfile_:
 
     FROM adzerk/boot-clj:latest
 
